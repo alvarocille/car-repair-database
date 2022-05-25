@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@media (max-width: 1400px) {
+    table {
+        padding: 0;
+    }
+    main {
+
+        width: 100vw !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("Imagenes/fondo.jpg");
+    background-repeat: repeat;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    border-bottom: 5px solid rgb(139, 2, 2);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 7vh;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    text-transform:uppercase;
+}
+
+main {
+    margin: 15vh auto;
+    min-height: 50vh;
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.774);
+    border: 1vh solid black;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    -ms-border-radius: 5vh;
+    -o-border-radius: 5vh;
+    color: black;
+    padding: 4vh;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    border-top: 5px solid rgb(139, 2, 2);
+    position: fixed;
+    bottom: 0;
+    padding: 0 4vh;
+    display: flex;
+    justify-content: space-between;
+    font-size: 4vh;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+footer div+div {
+    gap: 2vh;
+}
+
+footer a, footer p {
+    font-size: 80%;
+    color: white;
+}
+
+footer img {
+    height: 5vh;
+}
+
+form {
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+form p {
+    color: black;
+}
+
+form div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form.login {
+    align-items: center;
+}
+
+form div.login *,
+form div.recordar * {
+    width: 30vw;
+    font-size: 4vh;
+}
+
+form .btn input {
+    width: 10vw;
+    height: 5vh;
+    font-size: 2vh;
+}
+
+form .btn {
+    display: flex;
+    gap: 5vw;
+}
+
+form.datos div {
+    justify-content: space-evenly;
+}
+
+form.datos div div {
+    gap: 1vw;
+}
+
+form.datos div.precios input {
+    width: 28%;
+}
+
+form.datos {
+    font-size: 2vh;
+}
+
+/* Campos de texto de los formularios */
+form.datos p+input {
+    width: 15vw;
+    font-size: 2vh;
+}
+
+textarea {
+    width: 30vw;
+    font-size: 1.6vh;
+}
+
+p.error {
+    text-align: center;
+    color: red;
+    font-size: 4vh;
+}
+
+p.aviso {
+    text-align: center;
+    color: black;
+    font-size: 4vh;
+}
+
+main img {
+    position: relative;
+    left: 22.5vw;
+    height: 90%;
+    width: 30%;
+}
+
+nav {
+    background-color: red;
+    display: fixed;
+    top: 0;
+}
+
+nav ul {
+    background-color: red;
+    border-bottom: 5px solid rgb(139, 2, 2); 
+    overflow: hidden;
+    list-style-type: none;
+}
+
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 3vh;
+    border: 2px solid rgb(139, 2, 2);
+}
+
+nav li {
+    float: left;
+}
+
+nav a:hover {
+    background-color: rgb(185, 1, 1);
+}
+
+nav a:active, .activo {
+    background-color: rgb(139, 2, 2);
+}
+
+main:has(table) {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+} 
+
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-radius: 5vh;
+    -webkit-border-radius: 5vh;
+    -moz-border-radius: 5vh;
+    -ms-border-radius: 5vh;
+    -o-border-radius: 5vh;
+    max-width: 65vw;
+
+}
+
+td, th {
+    border: 1px solid rgb(44, 44, 44);
+    padding: 0.4vw;
+    overflow-wrap: break-word;
+}
+
+th {
+    font-weight: 900;
+    text-shadow: 1vw;
+}
+
